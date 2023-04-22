@@ -10,7 +10,7 @@ const btn2 = document.getElementById("btn-2");
 const response = document.querySelector("p");
 
 questionContainer.addEventListener("click", () => {
-  questionContainer.classList.toggle("question-click");
+  questionContainer.classList.add("question-click");
 });
 
 btn1.addEventListener("click", () => {
