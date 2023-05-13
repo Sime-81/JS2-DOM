@@ -122,3 +122,21 @@ form.addEventListener("submit", (e) => {
     alert("Veuillez accepter les CGV");
   }
 });
+
+//-------------------------------------------------------------
+// Load event
+window.addEventListener("load", () => {
+  console.log("Document Chargé !");
+});
+
+//-------------------------------------------------------------
+// ForEach
+const boxes = document.querySelectorAll(".box");
+
+boxes.forEach((box) => {
+  box.addEventListener("click", (e) => {
+    console.log(e.target);
+  });
+});
+
+//-------------------------------------------------------------
