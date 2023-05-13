@@ -86,7 +86,6 @@ document.addEventListener("keypress", (e) => {
 const nav = document.querySelector("nav");
 
 window.addEventListener("scroll", () => {
-
   if (window.scrollY > 120) {
     nav.style.top = 0;
   } else {
@@ -112,14 +111,14 @@ select.addEventListener("input", (e) => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  
+
   if (cgv.checked) {
-    document.querySelector('form > div').innerHTML = `
+    document.querySelector("form > div").innerHTML = `
       <h3>Pseudo : ${pseudo}</h3>
       <h4>Language préféré : ${language}</h4>
     
-    `
+    `;
   } else {
-    alert("Veuillez accepter les CGV")
+    alert("Veuillez accepter les CGV");
   }
 });
