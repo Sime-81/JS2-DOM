@@ -140,3 +140,23 @@ boxes.forEach((box) => {
 });
 
 //-------------------------------------------------------------
+// addEventListener Vs onclick
+// On ne peut attribuer plusieur événement au onclick
+// document.body.onclick = function() {
+//   console.log("Scroll !");
+// } // veille méthode 
+
+// addEventListener deux avantages en plus on peut faire deux event en même temps, plus troisième argument 
+
+// Bubbling => fin (de base l'eventlistener est paramétré en mode Bubbling)
+document.body.addEventListener("click", () => {
+  console.log('click 1 !');
+}, false);
+
+
+// Usecapture
+document.body.addEventListener("click", () => {
+  console.log('click 2 !');
+}, true);
+
+//---------------------------------------------------------------
