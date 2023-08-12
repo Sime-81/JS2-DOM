@@ -165,3 +165,8 @@ questionContainer.addEventListener("click", (e) => {
   alert("Test !");
   e.stopPropagation();
 })
+
+// removeEventListener 
+// Permet d'enlever un evenement en faisant une action 
+
+//---------------------------------------------------------------
