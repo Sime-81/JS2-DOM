@@ -160,3 +160,8 @@ document.body.addEventListener("click", () => {
 }, true);
 
 //---------------------------------------------------------------
+// Stop propagation 
+questionContainer.addEventListener("click", (e) => {
+  alert("Test !");
+  e.stopPropagation();
+})
