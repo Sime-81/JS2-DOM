@@ -222,3 +222,12 @@ btn1.addEventListener("click", () => {
 //   location.href = "http://twitter.fr"
 // };
 
+//Navigator
+// console.log(navigator.userAgent);
+
+// History
+// console.log(history)
+// window.history.back()
+// history.go(-2)
+
+//---------------------------------------------------------------
