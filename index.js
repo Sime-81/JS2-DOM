@@ -161,12 +161,64 @@ document.body.addEventListener("click", () => {
 
 //---------------------------------------------------------------
 // Stop propagation 
-questionContainer.addEventListener("click", (e) => {
-  alert("Test !");
-  e.stopPropagation();
-})
+// questionContainer.addEventListener("click", (e) => {
+//   alert("Test !");
+//   e.stopPropagation();
+// })
 
 // removeEventListener 
 // Permet d'enlever un evenement en faisant une action 
 
 //---------------------------------------------------------------
+// BOM
+
+//console.log(window.innerHeight);
+//console.log(window.scrollY);
+//window.open('http://google.com', "cour js", height=600, width=800);
+//window.close()
+
+// Evénement adossés à Window
+//alert("hello");
+
+// confirm
+btn2.addEventListener("click", (e) => {
+  confirm("Voulez-vous vraiment vous tromper ?");
+  
+});
+
+// prompt
+btn1.addEventListener("click", () => {
+  let answer = prompt("Entrez votre nom !");
+
+  questionContainer.innerHTML += "<h3>Bien joué mon donut sucré au sucre <3 " + answer + "</h3>"
+})
+
+// Timer, compte à rebours 
+// setTimeout(() => {
+//   questionContainer.style.borderRadius = "300px";
+// }, 2000) //Temps en milliseconde
+
+// let interval = setInterval(() => {
+//   document.body.innerHTML += `
+//     <div class='box'>
+//       <h2>Nouvelle Boite !</h2>
+//     </div>
+//   `;
+// }, 2000)
+
+// document.body.addEventListener("click", (e) => {
+//   e.target.remove();
+//   clearInterval(interval);
+// });
+
+// Location
+// console.log(location.href);
+// console.log(location.host);
+// console.log(location.pathname);
+// console.log(location.search);
+// location.replace("http://lequipe.fr");
+
+// window.onload = () => {
+//   location.href = "http://twitter.fr"
+// };
+
